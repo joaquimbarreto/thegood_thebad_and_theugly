@@ -58,7 +58,7 @@ const Checkboxes = () => {
               <Form.Field inline>
                 <Checkbox
                   toggle
-                  label="The Good (or Quality)"
+                  label="The Good (or High Quality)"
                   onChange={handleGood}
                   disabled={disableGood ? true : null}
                 />
@@ -66,7 +66,7 @@ const Checkboxes = () => {
               <Form.Field inline>
                 <Checkbox
                   toggle
-                  label="The Bad (or Speed)"
+                  label="The Bad (or Fast Speed)"
                   onChange={handleBad}
                   disabled={disableBad ? true : null}
                 />
@@ -74,7 +74,7 @@ const Checkboxes = () => {
               <Form.Field inline>
                 <Checkbox
                   toggle
-                  label="The Ugly (or Cost)"
+                  label="The Ugly (or Low Cost)"
                   onChange={handleUgly}
                   disabled={disableUgly ? true : null}
                 />
@@ -90,22 +90,25 @@ const Checkboxes = () => {
             <Divider />
             {good && bad ? (
               <p>
-                If you want to do things to a very good quality at a fast pace
-                means that you will need to invest a great deal of money.
-                Expensive and not a good long term solution.
+                This will cost you in may ways. You won't be able to do your
+                best no matter how much you try. The third party will never be
+                satisfied as they will either complain it took too long or cost
+                too much or most likely, both. Expensive and not a good long
+                term solution.
               </p>
             ) : null}
             {good && ugly ? (
               <p>
                 This is by far the best option to do everything in life. Its
-                inexpensive. One learns everything related to it for life. It is
-                a solid decision for long term happiness.
+                inexpensive. One learns everything related to it for the rest of
+                your life. It is a solid decision for long term happiness.
               </p>
             ) : null}
             {ugly && bad ? (
               <p>
-                Don't bother. If anyone asks you to do it this way, tell them to
-                find someone else. They are not for you. It will only end in
+                Don't bother. If anyone asks you to do it this way (cheap and
+                fast), tell them to find someone else and run away from them as
+                fast as you can. They are not for you. It will only end in
                 tears.
               </p>
             ) : null}
