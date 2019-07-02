@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Checkbox, Form, Grid, Container, Divider } from "semantic-ui-react";
+import {
+  Checkbox,
+  Form,
+  Grid,
+  Container,
+  Divider,
+  Header
+} from "semantic-ui-react";
 
 const Checkboxes = () => {
   const [good, setGood] = useState(false);
@@ -51,6 +58,9 @@ const Checkboxes = () => {
       <Grid>
         <Grid.Row centered>
           <Grid.Column width={6}>
+            <Header as="h1" style={{ margin: "0.5em 0em" }}>
+              How To Do Things In Life
+            </Header>
             <Form>
               <Form.Field>
                 Choose Only <strong>TWO</strong>

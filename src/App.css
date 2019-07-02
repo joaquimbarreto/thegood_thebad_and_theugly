@@ -31,9 +31,3 @@
     transform: rotate(360deg);
   }
 }
-
-header {
-  font-size: 3em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
